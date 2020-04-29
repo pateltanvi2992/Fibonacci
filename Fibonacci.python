@@ -1,0 +1,15 @@
+#9. Fibonacci numbers
+
+def fibonacci(n):
+  if(n<=1):
+    return n
+  else:
+    return (fibonacci(n-1) + fibonacci(n-2))
+
+last_number = int(input("Enter the last number of fibonacci : "))
+if(last_number<1):
+  print("Please Enter positive number")
+else:
+  for i in range(last_number):
+    print(fibonacci(i)),
+  
